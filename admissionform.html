@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Admisssion Form</h1>
+    <form>
+        <label>Full Name</label>
+        <input type="text" required minlength="5">
+
+        <br>
+        <br>
+
+        <label>Email Address</label>
+        <input type="email" required>
+
+        <br><br>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <br><br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+
+        <br><br>
+
+        <label>Select Course</label>
+        <select>
+            <option>MERN Stack</option>
+            <option>Python Data Science</option>
+            <option>Data Analytics</option>
+            <option>AI</option>
+            <option>React Native App Development</option>
+        </select>
+
+        <br><br>
+
+        <label>Select College</label>
+        <input type="text" list="college">
+        <datalist id="college">
+            <option>Integral</option>
+            <option>BBD</option>
+            <option>SRM</option>
+            <option>Amity</option>
+        </datalist>
+        
+        <br><br>
+
+        <label>Address</label>
+        <textarea rows="4" cols="50"></textarea>
+
+        <br><br>
+
+        <input type="checkbox"><label>Accept Terms and Conditions</label>
+
+        <br><br>
+
+        <details>
+            <summary>View terms and conditions</summary>
+            <p><mark>Hello</mark> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eum optio, veniam architecto illo quasi vero aliquam libero sapiente? Tempore libero neque provident officia laboriosam enim optio, vel quae! Quos.</p>
+        </details>
+
+        <br><br>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
