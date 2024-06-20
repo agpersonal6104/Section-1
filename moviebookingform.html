@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book My Show</title>
+    <title>BookMyShow</title>
     <style>
         .heading{
             color: red;
@@ -18,7 +18,7 @@
             border: 3px solid red;
             padding: 10px;
             border-radius: 8px;
-       } 
+       }
 
        .button{
         border: none;
@@ -41,15 +41,41 @@
 <body>
 
     <main>
-        <h1 class="heading">Book My Show</h1>
+        <div>
+            <h1 class="heading">BookMyShow</h1>
+        </div>
 
         <label class="label">Name</label>
         <input type="text" required>
 
         <br><br>
 
+        <label class="label">Phone Number</label>
+        <input type="number">
+
         <label class="label">Email Address</label>
         <input type="email" required>
+
+        <br><br>
+
+        <label class="label">City</label>
+        <input type="text" list="cities">
+        <datalist id="cities">
+            <option>Lucknow</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+            <option>Delhi</option>
+            <option>Chandhigarh</option>
+            <option>Pune</option>
+            <option>Jaipur</option>
+            <option>Deheradun</option>
+            <option>Chennai</option>
+        </datalist>
+
+        <br><br>
+
+        <label class="label">Date</label>
+        <input type="date">
 
         <br><br>
 
@@ -60,6 +86,11 @@
             <option>Godzilla Minus One</option>
             <option>The Exorcism</option>
         </select>
+
+        <br><br>
+
+        <label class="label">Number of Tickets</label>
+        <input type="text">
 
         <br><br>
 
