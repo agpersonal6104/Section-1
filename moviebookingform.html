@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book My Show</title>
     <style>
+        .heading{
+            color: red;
+            text-align: center;
+        }
 
         main {
+            display: grid;
             align-items: center;
             margin: auto;
             width: 50%;
-            border: 3px solid green;
+            border: 3px solid red;
             padding: 10px;
+            border-radius: 8px;
        } 
+
+       .button{
+        border: none;
+        color: white;
+        background-color: red;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        border: 8px;
+       }
+
+        .label{
+            color: red;
+            font-size: 20px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
 
     <main>
-        <h1>Book My Show</h1>
+        <h1 class="heading">Book My Show</h1>
 
-        <label for="">Name</label>
-        <input type="text">
-
-        <br><br>
-
-        <label>Email Address</label>
-        <input type="email">
+        <label class="label">Name</label>
+        <input type="text" required>
 
         <br><br>
 
-        <label>Movie name</label>
-        <select>
+        <label class="label">Email Address</label>
+        <input type="email" required>
+
+        <br><br>
+
+        <label class="label">Movie name</label>
+        <select required>
             <option>Inside Out</option>
             <option>Munjya</option>
             <option>Godzilla Minus One</option>
@@ -40,14 +63,18 @@
 
         <br><br>
 
-        <label>Timings</label>
-        <select>
+        <label class="label">Timings</label>
+        <select required>
             <option>8:30 am</option>
             <option>12:00pm</option>
             <option>2:30pm</option>
             <option>6:00pm</option>
             <option>9:30pm</option>
         </select>
+
+        <br><br>
+
+        <button class="button" type="submit">Book Now</button>
 
     </main>
 </body>
