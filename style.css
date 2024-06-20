@@ -1,0 +1,13 @@
+.move-top-btn{
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+body{
+    height: 200vh;
+}
