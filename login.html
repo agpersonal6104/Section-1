@@ -8,6 +8,11 @@
 
     <style>
 
+        :root{
+            --theme-color: blueviolet;
+            --accent-color:#e2c3ff; 
+        }
+
         *{
             font-family: Montserrat;
         }
@@ -25,6 +30,7 @@
         padding: 30px;
         border-radius: 10px;
         box-sizing: border-box;
+        background-color: white;
        }
 
        body{
@@ -32,6 +38,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: var(--accent-color);
+        background-image: url('')
        }
 
        .form-title{
@@ -45,21 +53,22 @@
         padding: 10px;
         border-radius: 5px;
         border: none;
-        border-bottom: 2px solid blueviolet;
-        background-color: #e2c3ff;
+        border-bottom: 2px solid var(--theme-color);
+        background-color: var(--accent-color);
        }
 
        .submit-btn{
         padding: 5px;
-        background-color: blueviolet;
+        background-color: var(--theme-color);
         color: white;
         border: none;
         border-radius: 5px;
         font-weight: bold;
+        margin-bottom: 20px;
        }
 
        .link{
-        color: blueviolet;
+        color: var(--theme-color);
         text-decoration: none;
         margin-bottom: 20px;
         display: block;
@@ -67,9 +76,14 @@
 
        .signup-link{
         text-align: center;
-        margin-top: 20px;
         font-size: 0.8em;
         font-weight: bold;
+       }
+
+       .brand{
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--theme-color);
        }
 
     </style>
@@ -78,6 +92,7 @@
 <body>
     <div class="card">
 
+        <h1 class="brand">Brand Name</h1>
         <h3 class="form-title">Login Form</h3>
 
         <form>
