@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookTickets</title>
     <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .heading{
             color: red;
             text-align: center;
         }
 
-        main {
+        div{
             display: grid;
             align-items: center;
             margin: auto;
@@ -21,13 +29,17 @@
        }
 
        .button{
-        border: none;
-        color: white;
-        background-color: red;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 16px;
-        border: 8px;
+            border: none;
+            color: white;
+            background-color: red;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            border: 8px;
+       }
+
+       .button:hover{
+        transform: rotateZ('90deg');
        }
 
         .label{
@@ -39,11 +51,8 @@
     </style>
 </head>
 <body>
-
-    <main>
-        <div>
-            <h1 class="heading">BookTickets</h1> 
-        </div>
+    <div>
+        <h1 class="heading">BookTickets</h1>
 
         <label class="label">Name</label>
         <input type="text" required>
@@ -109,6 +118,6 @@
 
         <button class="button" type="submit">Book Now</button>
 
-    </main>
+    </div>
 </body>
 </html>
