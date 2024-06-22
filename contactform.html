@@ -3,14 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900">
+
+
+    <style>
+
+        *{
+            font-family: Roboto;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card{
+            /*border: 2px solid red;*/
+            width: 20%;
+            box-shadow: 3px 3px 10px 2px #0000007e;
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        .text-input, .submit-btn, .message-box{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+    </style>
 </head>
 <body>
-    <div>
+    <div class="card">
+
         <h2>Contact Us</h2>
         <p>Please fill the required details</p>
-        <label for="label">First Name</label>
-        <input type="text">
+
+        <form>
+            <label for="name">Name</label>
+            <input class="text-input" type="text" required>
+
+            <label for="email">Email</label>
+            <input class="text-input" type="email">
+
+            <label for="phnumber">Phone Number</label>
+            <input class="text-input" type="number">
+
+            <label for="message">Message</label>
+            <textarea class="message-box"></textarea>
+
+            <button class="submit-btn">Submit</button>
+        </form>
+        
+
     </div>
 </body>
 </html>
