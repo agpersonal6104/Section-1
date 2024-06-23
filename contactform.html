@@ -19,11 +19,13 @@
             align-items: center;
             justify-content: center;
             background-image : linear-gradient(to right top, #a6c4ed, #adccf0, #b4d3f2, #bddbf5, #c6e2f7);
+            background-size: cover;
+            margin: 0;
         }
 
         .card{
             /*border: 2px solid red;*/
-            width: 20%;
+            width: 25%;
             box-shadow: 3px 3px 10px 2px #0000007e;
             padding: 30px;
             border-radius: 10px;
@@ -44,13 +46,15 @@
             text-align: center;
             font-family: Roboto;
         }
+        .form-title, .doso, .text-input{
+            color: #0a1551;
+        }
 
         .message-box{
             margin-top: 10px;
             margin-bottom: 20px;
             padding: 10px;
             border-radius: 8px;
-
         }
 
         .text-input, .submit-btn, .message-box
@@ -58,6 +62,15 @@
             display: block;
             width: 100%;
             box-sizing: border-box;
+        }
+
+        .submit-btn{
+            padding: 5px;
+            background-color: #0a1551;
+            color: white;
+            font-weight: bold;
+            border-color: #0a1551;
+            border-radius: 8px;
         }
 
     </style>
