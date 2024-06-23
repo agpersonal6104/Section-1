@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        :root{
+            --theme-color : #007ddc;
+        }
 
         *{
             font-family: Roboto;
@@ -22,22 +26,38 @@
 
         header{
             height: 70vh;
-            border: 2px solid red;
+            /*border: 2px solid red;*/
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/misty-dark-forest-background-desktop-wallpaper-preview.jpg');
             background-size: cover;
-            background-position: bottom;
+            background-position: center;
         }
 
         .header-content{
-            border: 2px solid blue;
+            /*border: 2px solid blue;*/
             color: white;
         }
         .header-title{
             font-size: 50px;
+        }
+
+        .btn{
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-main{
+            background-color: var(--theme-color);
+            color: white;
+        }
+
+        .btn-outline{
+            background-color: white;
+            color: var(--theme-color);
         }
 
     </style>
@@ -55,7 +75,29 @@
             <button class="btn btn-outline">Explore</button>
         </div>
     </header>
-    <main></main>
+    <main>
+        <article>
+
+            <section class="section-features">
+
+                <h2 class="section-title">Our Features</h2>
+
+                <p class="section-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint fugiat voluptatem exercitationem. Possimus, maxime dolor?</p>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-6x"></i>
+                        <h3>card Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut, excepturi sunt, perspiciatis maiores in illo tempore est sed expedita harum voluptatem quae, consequuntur minima impedit vitae exercitationem tempora. Voluptas.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+    </main>
     <footer></footer>
 </body>
 </html>
