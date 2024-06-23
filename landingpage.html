@@ -10,6 +10,7 @@
     <style>
         :root{
             --theme-color : #007ddc;
+            --theme-color-dark : #002b57;
         }
 
         *{
@@ -60,6 +61,49 @@
             color: var(--theme-color);
         }
 
+        section{
+            padding: 5% 10%;
+            text-align: center;
+        }
+        
+        .section-title{
+            font-size: 40px;
+        }
+
+        .section-subtitle{
+            font-size: 20px;
+        }
+
+        .card-container{
+            display: flex;
+            gap: 30px;
+        }
+
+        .card{
+            /*border: 2px solid red;*/
+            text-align: center;
+            padding: 50px 30px;
+            border-radius: 10px;
+            color: var(--theme-color-dark);
+            transition-duration: 0.3s;
+        }
+
+        .card *{
+            margin-bottom: 20px;
+        }
+
+        .card h3{
+            font-size: 30px;
+        }
+
+        .card:hover{
+            color: white;
+            background-color: var(--theme-color-dark);
+            box-shadow: 2px 2px 5px 0 #00000079;
+            border: 1px solid var(--theme-color-dark);
+            transform: translateY(-10px);
+        }
+
     </style>
 
 </head>
@@ -88,7 +132,19 @@
 
                     <div class="card">
                         <i class="fa-solid fa-rocket fa-6x"></i>
-                        <h3>card Title</h3>
+                        <h3>Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut, excepturi sunt, perspiciatis maiores in illo tempore est sed expedita harum voluptatem quae, consequuntur minima impedit vitae exercitationem tempora. Voluptas.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-6x"></i>
+                        <h3>Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut, excepturi sunt, perspiciatis maiores in illo tempore est sed expedita harum voluptatem quae, consequuntur minima impedit vitae exercitationem tempora. Voluptas.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-6x"></i>
+                        <h3>Card Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut, excepturi sunt, perspiciatis maiores in illo tempore est sed expedita harum voluptatem quae, consequuntur minima impedit vitae exercitationem tempora. Voluptas.</p>
                     </div>
 
