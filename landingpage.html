@@ -63,15 +63,17 @@
 
         section{
             padding: 5% 10%;
-            text-align: center;
+           
         }
         
         .section-title{
             font-size: 40px;
+            text-align: center;
         }
 
         .section-subtitle{
             font-size: 20px;
+            text-align: center;
         }
 
         .card-container{
@@ -102,6 +104,36 @@
             box-shadow: 2px 2px 5px 0 #00000079;
             border: 1px solid var(--theme-color-dark);
             transform: translateY(-10px);
+        }
+
+        .service{
+            /* border: 2px solid green; */
+            display: grid;
+            align-items: center;
+        }
+
+        .service1{
+            grid-template-columns: 1fr 2fr;
+        }
+        .service2{
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .service3{
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .service-image{
+            /* border: 2px solid crimson; */
+        }
+
+        .service-content{
+            /* border: 2px solid blue; */
+            padding: 30px;
+        }
+
+        .service h1{
+            font-size: 30px;
         }
 
     </style>
@@ -149,6 +181,50 @@
 
                 </div>
 
+            </section>
+            <section class="section-services">
+
+                <div class="service service1">
+                    <div class="service-image">
+                        <img style="width:100%;" src="undraw_Services_re_hu5n.png" alt="services">
+                    </div>
+
+                    <div class="service-content">
+                        <h1>First Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                </div>
+
+                <div class="service service2">
+
+                    <div class="service-content">
+                        <h1>Second Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                    <div class="service-image">
+                        <img style="width:100%;" src="undraw_search_app_oso2.png" alt="services">
+                    </div>
+
+                </div>
+
+                <div class="service service3">
+                    <div class="service-image">
+                        <img style="width:100%;" src="undraw_Devices_re_dxae.png" alt="services">
+                    </div>
+
+                    <div class="service-content">
+                        <h1>Third Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                </div>
+
+                
             </section>
         </article>
     </main>
