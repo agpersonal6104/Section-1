@@ -169,6 +169,116 @@
     text-decoration: none;
 }
 
+.service{
+            /* border: 2px solid green; */
+            display: grid;
+            align-items: center;
+        }
+
+        .service1{
+            grid-template-columns: 1fr 2fr;
+        }
+        .service2{
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .service3{
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        .service-image{
+            /* border: 2px solid crimson; */
+        }
+
+        .service-content{
+            /* border: 2px solid blue; */
+            padding: 30px;
+        }
+
+        .service h1{
+            font-size: 30px;
+        }
+
+        .contact-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color : white;
+            background-size: cover;
+        }
+
+        .contact-card{
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-shadow: 3px 3px 10px 2px #0000007e;
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        .text-input
+        {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .text-input:hover {
+            border: 1px solid #aaa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title{
+            text-align: center;
+            font-family: Roboto;
+        }
+        .form-title, .doso, .text-input{
+            color: var(--theme-color-dark);
+        }
+
+        .message-box{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .message-box:hover {
+            border: 1px solid #aaa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-input, .message-box{
+            border-color: var(--theme-color);
+        }
+
+        .text-input, .submit-btn, .message-box
+        {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .submit-btn{
+            padding: 10px;
+            background-color: #0a1551;
+            color: white;
+            font-weight: bold;
+            border-color: #0a1551;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            border-color: #3682d2db;
+            background-color: #3682d2db;
+            cursor: grab;
+        }
+
     </style>
 
 </head>
@@ -214,6 +324,89 @@
 
                 </div>
 
+            </section>
+            <section class="section-services">
+
+                <div class="service service1">
+                    <div class="service-image">
+                        <img style="width:100%;" src="undraw_Services_re_hu5n.png" alt="services">
+                    </div>
+
+                    <div class="service-content">
+                        <h1>First Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                </div>
+
+                <div class="service service2">
+
+                    <div class="service-content">
+                        <h1>Second Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                    <div class="service-image">
+                        <img style="width:100%;" src="undraw_search_app_oso2.png" alt="services">
+                    </div>
+
+                </div>
+
+                <div class="service service3">
+                    <div class="service-image">
+                        <img style="width:100%;" src="undraw_Devices_re_dxae.png" alt="services">
+                    </div>
+
+                    <div class="service-content">
+                        <h1>Third Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                    <div class="service-image">
+                        <img style="width: 100%;" src="undraw_Devices_re_dxae.png" alt="services">
+                    </div>
+
+                    <div class="service-content">
+                        <h1>Third Service title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a dolorum tempora quas beatae mollitia deleniti pariatur corporis, deserunt odit assumenda sint perferendis explicabo nulla modi, facere molestias quis consequatur.</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                </div>
+
+                
+            </section>
+
+            <section class="contact-section">
+                <div class="contact-card">
+
+                    <h2 class="form-title">Contact Us</h2>
+                    <p class="doso">Please fill the required details</p>
+            
+                    <form>
+                        <label for="name">Name</label>
+                        <input class="text-input" type="text" required>
+            
+                        <label for="email">Email</label>
+                        <input class="text-input" type="email">
+            
+                        <label for="phnumber">Phone Number</label>
+                        <input class="text-input" type="number">
+            
+                        <label for="message">Message</label>
+                        <textarea class="message-box"></textarea>
+            
+                        <button class="submit-btn">Send</button>
+                    </form>
+                    
+            
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
             </section>
         </article>
     </main>
