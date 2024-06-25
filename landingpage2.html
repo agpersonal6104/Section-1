@@ -265,19 +265,24 @@
 
         .submit-btn{
             padding: 10px;
-            background-color: #0a1551;
+            background-color: var(--theme-color-dark);
             color: white;
             font-weight: bold;
-            border-color: #0a1551;
+            border-color: var(--theme-color-dark);
             border-radius: 8px;
             cursor: pointer;
         }
 
         .submit-btn:hover {
-            border-color: #3682d2db;
-            background-color: #3682d2db;
+            border-color: var(--theme-color);
+            background-color: var(--theme-color);
             cursor: grab;
         }
+
+        .contact-label{
+            color: var(--theme-color-dark);
+        }
+        
 
     </style>
 
@@ -387,16 +392,16 @@
                     <p class="doso">Please fill the required details</p>
             
                     <form>
-                        <label for="name">Name</label>
+                        <label class="contact-label" for="name">Name</label>
                         <input class="text-input" type="text" required>
             
-                        <label for="email">Email</label>
+                        <label class="contact-label" for="email">Email</label>
                         <input class="text-input" type="email">
             
-                        <label for="phnumber">Phone Number</label>
+                        <label class="contact-label" for="phnumber">Phone Number</label>
                         <input class="text-input" type="number">
             
-                        <label for="message">Message</label>
+                        <label class="contact-label" for="message">Message</label>
                         <textarea class="message-box"></textarea>
             
                         <button class="submit-btn">Send</button>
