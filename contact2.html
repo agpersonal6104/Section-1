@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        body {
+            margin: 50px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            border: 2px solid crimson;
+            width: 40%;
+            height: 70vh;
+            border-radius: 10px;
+            background-color: crimson;
+            padding: 10%;
+            box-sizing: border-box;
+            color: white;
+            position: relative;
+        }
+
         .floating-btn{
             background-color: crimson;
-            width: ;
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: absolute;
+            right: -35px;
+            top: calc(50% - 35px);
         }
     </style>
 </head>
 <body>
-    <h1>Sign Up</h1>
+    <div class="card">
+        <h1>Signup</h1>
+
+        <div class="floating-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    
 </body>
 </html>
