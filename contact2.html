@@ -15,13 +15,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #fc5c7d; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fc5c7d, #6a82fb); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fc5c7d, #6a82fb);
         }
 
-        .card {
+        .left-card {
             border: 2px solid crimson;
-            width: 40%;
+            width: 30%;
             height: 70vh;
-            border-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
             background-color: crimson;
             padding: 10%;
             box-sizing: border-box;
@@ -42,15 +46,48 @@
             right: -35px;
             top: calc(50% - 35px);
         }
+
+        .right-card{
+            border: 2px solid crimson;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 40%;
+            height: 70vh;
+            background-color: white;
+            box-sizing: border-box;
+            padding: 10%;
+        }
+
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="left-card">
+
         <h1>Signup</h1>
 
         <div class="floating-btn">
             <i class="fa-solid fa-chevron-right"></i>
         </div>
+
+    </div>
+    <div class="right-card">
+        <form>
+
+            <button class="">Sign Up</button>
+
+            <button>Log In</button>
+
+            <label class="form-label">Full Name</label>
+            <input class="form-input" type="text">
+
+            <label class="form-label">Password</label>
+            <input class="form-input" type="password">
+
+            <label class="form-label">Email</label>
+            <input class="form-label" type="email">
+
+            <button>Sign In</button>
+        </form>
     </div>
     
 </body>
