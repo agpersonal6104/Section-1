@@ -15,9 +15,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #00F260;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-color: crimson;
+            /* background: #00F260;  fallback for old browsers */
+            /* background: -webkit-linear-gradient(to right, #0575E6, #00F260);  Chrome 10-25, Safari 5.1-6 */
+            /* background: linear-gradient(to right, #0575E6, #00F260); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         }
 
@@ -32,6 +33,13 @@
             box-sizing: border-box;
             color: white;
             position: relative;
+            box-shadow: -3px 3px 10px 2px #0000007e;
+        }
+
+        .left-title{
+            font-style: oblique;
+            font-size: 45px;
+            font-weight: bold;
         }
 
         .floating-btn{
@@ -49,7 +57,6 @@
         }
 
         .right-card{
-            border: 2px solid crimson;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             width: 40%;
@@ -57,6 +64,70 @@
             background-color: white;
             box-sizing: border-box;
             padding: 10%;
+            box-shadow: 3px 3px 10px 2px #0000007e;
+        }
+
+        .btn-top-1{
+            border-color: #3232ba;
+            background-color: #3232ba;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-top-2{
+            border-color: #3232ba;
+            color: #3232ba;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .top-btn{
+            /* border: 2px solid blue; */
+            box-sizing: border-box;
+            position: absolute;
+            top: 21%;
+            right: 18%;
+        }
+
+        .form-label{
+            color: crimson;
+            font-weight: bold;
+        }
+
+        .form-input{
+            /* border: 2px solid black; */
+            margin-bottom: 30px;
+            margin-top: 10px;
+            padding: 10px;
+            width: 95%;
+            border: none;
+            border-bottom: 2px solid crimson;
+            display: block;
+            size: 40px;
+        }
+
+        .form-label, .sign-in-btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .sign-in-btn{
+            position: absolute;
+
+            padding: 15px;
+            color: white;
+            border: none;
+            background-color: crimson;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px
         }
 
     </style>
@@ -64,7 +135,7 @@
 <body>
     <div class="left-card">
 
-        <h1>Signup</h1>
+        <h1 class="left-title">Signup</h1>
 
         <div class="floating-btn">
             <i class="fa-solid fa-chevron-right"></i>
@@ -74,9 +145,11 @@
     <div class="right-card">
         <form>
 
-            <button class="">Sign Up</button>
+            <div class="top-btn">
+                <button class="btn-top-1">Sign Up</button>
 
-            <button>Log In</button>
+                <button class="btn-top-2">Log In</button>
+            </div>
 
             <label class="form-label">Full Name</label>
             <input class="form-input" type="text">
@@ -85,11 +158,10 @@
             <input class="form-input" type="password">
 
             <label class="form-label">Email</label>
-            <input class="form-label" type="email">
+            <input class="form-input" type="email">
 
-            <button>Sign In</button>
+            <button class="sign-in-btn">Sign In</button>
         </form>
     </div>
-    
 </body>
 </html>
