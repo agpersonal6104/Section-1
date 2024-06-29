@@ -11,3 +11,16 @@ console.log( typeof myname );
 
 isLogin = true;
 console.log( isLogin );
+
+// exponent operator
+console.log( 2 ** 3 );
+
+//comparison
+console.log( 1 == '1');
+
+console.log( 1 === '1');
+
+console.log( 34 + '45');
+console.log( 11+ '11' + 11 );
+
+console.log( null+'2211' );
