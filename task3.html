@@ -5,55 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        *{
+            font-family: Montserrat;
+        }
+    </style>
 </head>
-<style>
-    *{
-        font-family: Roboto;
-        color: ;
-    }
-</style>
-<body class="h-100vh m-0">
-    <main>
-        <section class="h-[20%] p-16">
-            <div class="container mx-auto p-4">
-                <div class="flex justify-between items-center mb-4">
-                    <div class="flex items-center border-box">
-                        <div class="mr-4 block">
-                            <h1 class="text-xl font-bold">Users</h1>
-                        </div>
-                        <div class="block">
-                            <input type="text" placeholder="Search..." class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        </div>
-                    </div>
+<body class="h-[100vh] mx-auto my-auto">
+    <div class="container h-[13%] mx-auto justify-start content-end px-8">
+        <h1 class="text-3xl font-bold text-gray-800">Users</h1>
+    </div>
+    
+    <div class="container flex h-[17%] mx-auto p-6"> 
+          
+        <div class="flex items-center justify-start w-1/3">
+            <input type="text" placeholder="Search Users" class="px-16 py-4 ml-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+        </div>
         
-                    <div class="flex items-center">
-                        <button class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-4">Home</button>
-                        <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">Profile</button>
-                    </div>
+        <div class="flex content-center justify-end w-2/3 gap-5 p-9 px-[10%]">
+            <button class="inline-block px-2 py-1 font-bold text-gray-600 rounded-md hover:bg-blue-600 hover:text-white">Reputation</button>
+            <button class="inline-block px-2 py-1 font-bold text-gray-600 rounded-md hover:bg-blue-600 hover:text-white">New Users</button>
+            <button class="inline-block px-2 py-1 font-bold text-gray-600 rounded-md hover:bg-blue-600 hover:text-white">Voters</button>
+            <button class="inline-block px-2 py-1 font-bold text-gray-600 rounded-md hover:bg-blue-600 hover:text-white">Editor</button>
+            <button class="inline-block px-2 py-1 font-bold text-gray-600 rounded-md hover:bg-blue-600 hover:text-white">Moderator</button>
+        </div>
         
-        </section>
+    </div>
+    <div class="container h-[70%] mx-auto">
+        <div class="grid grid-cols-3 gap-4 p-6 mt-6">
 
-        <section class="h-[80%] mx-auto">
+            <div class="flex">
+                <div class="w-1/3">
+                    <img src="pfp1.jpg" alt="Profile Image" class="w-24 h-24 mx-auto rounded-full">
+                </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-                <div class="items-center justify-between bg-white rounded-md p-6 hover:shadow-2xl hover:shadow-#14111152">
-                    <div class="flex items-center mb-4">
-                        <img src="pfp1.jpg" alt="Avatar" class="w-16 h-16 rounded-full mr-4">
-                        <div>
-                            <h2 class="text-xl font-bold text-gray-800">Vortex Zen</h2>
-                            <p class="text-gray-600">Planet X-212</p>
-                        </div>
-                    </div>
-                    <div class="flex space-x-2 right">
-                            <button class="p-2 bg-white border-2 border-blue-600 text-blue-600 rounded-[10px]">clothes</button>
-                            <button class="bg-white hover:bg-blue-700 text-blue-600 font-bold py-2 px-4 rounded">style</button>
+                <div class="container w-2/3">
+                    <h2 class="mt-2 text-xl font-bold text-gray-800">Sunny Corleone</h2>
+                    <p class="mt-1 font-bold text-gray-800">Troy, MI</p>
+                    <div class="flex py-3 mt-2 space-x-2">
+                        <span class="content-center justify-center text-blue-600 bg-white border-2 border-blue-600 rounded-2xl h-[26px] px-1">clothes</span>
+                        <span class="content-center justify-center text-blue-600 bg-white border-2 border-blue-600 rounded-2xl h-[26px] px-1">stem</span>
                     </div>
                 </div>
-                
             </div>
-        </section>
-    </main>
+            
+        </div>
+    </div>
 </body>
 </html>
