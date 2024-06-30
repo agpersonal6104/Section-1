@@ -7,14 +7,14 @@ function addNums( a, b)
 addNums(34,12);
 // console.log(c);
 
-const getAvg = function( m1, m2, m3, m4)
+let getAvg = function(m1,m2,m3,m4)
 {
-    const avg= ( m1+ m2+ m3+ m4)/4;
+    const avg= (m1+m2+m3+m4)/4;
     console.log(avg);
 }
 
-const res = getAvg(34, 56, 78, 78)
-console.log(res);
+const as=getAvg(13,13,13,13);
+console.log(as);
 
 const factorial = (n) =>{
     let f=1;
@@ -37,9 +37,27 @@ console.log(name5);
 
 const getReport = (m1,m2,m3,m4,max=100) =>{
     const avg = getAvg(m1,m2,m3,m4);
-    console.log(avg);
     const percentage = avg/max * 100;
     return [avg, percentage]
 }
-const [v1,v2]=getReport(134,156,78,90,200);
+const [v1, v2] = getReport(134,156,78,90,200);
 console.log(v1,v2);
+
+// WAP to take start and end as parameter
+// and print all numbers divisible by 7 in that range
+// and also print the sum of all such numbers
+
+const Divisible = (start,end) => {
+    let sum = 0;
+    for(let i=start; i<=end; i++)
+    {
+        if(i%7===0)
+        {
+            console.log(i);
+            sum+=i;
+        }
+    }
+    console.log("The sum is " + sum);
+}
+Divisible(10,100);
+
