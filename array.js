@@ -16,3 +16,7 @@ console.log(movies);
 
 // slicing
 console.log(movies.slice(2,5));
+console.log(movies.slice(2));
+console.log(movies.slice(-4));
+console.log(movies.slice(-4,-2));
+console.log(movies.slice(1,5).reverse());
