@@ -33,3 +33,11 @@ console.log(movies);
 
 movies.unshift('Kanchana');  //adds element at the beginning
 console.log(movies);
+
+console.log(movies.pop());  //removes element from the end
+console.log(movies.shift());  //removes element from the start
+console.log(movies);
+
+// movies.splice(3,2); // removes 2 elements from index 3
+movies.splice(3, 2, 'John Wick','The boyz', 'Invincible');
+console.log(movies);
