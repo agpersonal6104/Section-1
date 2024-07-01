@@ -11,3 +11,8 @@ const movies = ['300','MI','Deadpool','Expendables','3 Idiots','Inception'];
 console.log( movies[1] );
 console.log( movies.indexOf('Inception') );
 console.log( movies.at(-2) );
+movies[2] = 'Deadpool and Wolverine';
+console.log(movies);
+
+// slicing
+console.log(movies.slice(2,5));
