@@ -21,7 +21,7 @@ console.log(fruits5);
 console.log("------------------------------------------------------");
 console.log("------------------------------------------------------");
 // array Traversal
-const nums = [36, 19, 10, 2, 6, 2, 48];
+const nums = [36, 19, 10, 2, 6, 2, 49];
 for(let i=0; i < nums.length; i++)
 {
     console.log( nums[i] );
@@ -41,4 +41,9 @@ nums.forEach( ( a , i , j ) => { console.log( a, i , j ); } );
 // Square of every element
 nums.forEach( ( a ) => { console.log( a**2 ); } );
 
+
+console.log("----------------Using for each function---------------");
 // create a new array containing only even numbers
+let arr=[]
+nums.forEach( (a) => { if(a%2 === 1){arr.push(a);} } )
+console.log(arr);
