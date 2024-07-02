@@ -33,3 +33,12 @@ for(let n of nums)
 {
     console.log(n);
 }
+
+console.log("----------------Using for each function---------------");
+
+nums.forEach( ( a , i , j ) => { console.log( a, i , j ); } );
+
+// Square of every element
+nums.forEach( ( a ) => { console.log( a**2 ); } );
+
+// create a new array containing only even numbers
