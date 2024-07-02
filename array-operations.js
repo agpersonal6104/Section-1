@@ -17,3 +17,5 @@ console.log(fruits4);
 //remove element mango from array
 const fruits5 = fruits.slice(1,7)
 console.log(fruits5);
+
+const nums = [36, 19, 10, 2, 6, 2, 48];
