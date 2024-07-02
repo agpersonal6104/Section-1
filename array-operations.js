@@ -18,4 +18,18 @@ console.log(fruits4);
 const fruits5 = fruits.slice(1,7)
 console.log(fruits5);
 
+console.log("------------------------------------------------------");
+console.log("------------------------------------------------------");
+// array Traversal
 const nums = [36, 19, 10, 2, 6, 2, 48];
+for(let i=0; i < nums.length; i++)
+{
+    console.log( nums[i] );
+}
+
+console.log("------------------------------------------------------");
+
+for(let n of nums)
+{
+    console.log(n);
+}
