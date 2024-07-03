@@ -93,3 +93,20 @@ const smartphoneArray = [
         ram : ['2GB','8GB']
     },
 ];
+
+// Access price of the second smart phone
+console.log(smartphoneArray[1].Price);
+
+// 3rd smartphone colors array add new color 
+smartphoneArray[2].colors.push('Red');
+console.log(smartphoneArray[2].colors);
+
+// create an array containing all the brands of smartphone
+const brands = smartphoneArray.map((smartphone) => { return smartphone.Brand});
+console.log(brands);
+
+// Filter all smartphones containing white color
+const whiteSmartphones = smartphoneArray.filter((smartphone) => { return smartphone.colors.includes('White') });
+console.log(whiteSmartphones);
+
+console.log('-------------------------------');
