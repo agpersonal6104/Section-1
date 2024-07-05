@@ -116,8 +116,7 @@ smartphoneArray[2].colors.push('Red');
 console.log(smartphoneArray[2].colors);
 
 // create an array containing all the brands of smartphone
-const brands = smartphoneArray.map((smartphone) => { return smartphone.Brand});
-console.log(brands);
+console.log( smartphoneArray.map((smartphone) => { return smartphone.Brand}));
 
 // Filter all smartphones containing white color
 const whiteSmartphones = smartphoneArray.filter((smartphone) => { return smartphone.colors.includes('White') });
@@ -127,5 +126,10 @@ console.log('-------------------------------');
 
 // Filter all apple smartphones
 const keyword = 'Apple';
-const appleSmartphones = smartphoneArray.filter((smartphone) => { return smartphone.Brand.includes( keyword ) } );
+const appleSmartphones = smartphoneArray.filter((smartphone) => { return smartphone.Brand.toLowerCase().includes( keyword.toLowerCase() ) } );
 console.log(appleSmartphones);
+
+console.log('-------------------------------');
+
+const brands = smartphoneArray.map((smartphone) => { return smartphone.Brand});
+console.log(new Set(brands));
