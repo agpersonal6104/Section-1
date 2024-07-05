@@ -65,6 +65,13 @@ const smartphoneArray = [
         ram : ['6GB','8GB']
     },
     {
+        Brand : 'Apple',
+        Model : 'iphone 15',
+        Price : 59999,
+        colors : ['Red', 'Green', 'Blue'],
+        ram : ['6GB','8GB']
+    },
+    {
         Brand : 'MI',
         Model : 'poco X2',
         Price : 16000,
@@ -77,6 +84,13 @@ const smartphoneArray = [
         Price : 110000,
         colors : ['Silver', 'Gold'],
         ram : ['8GB','32GB']
+    },
+    {
+        Brand : 'Samsung',
+        Model : 'M50',
+        Price : 20000,
+        colors : ['Blue', 'black'],
+        ram : ['8GB','16GB']
     },
     {
         Brand : 'One Plus',
@@ -110,3 +124,8 @@ const whiteSmartphones = smartphoneArray.filter((smartphone) => { return smartph
 console.log(whiteSmartphones);
 
 console.log('-------------------------------');
+
+// Filter all apple smartphones
+const keyword = 'Apple';
+const appleSmartphones = smartphoneArray.filter((smartphone) => {return smartphone.Brand.includes(keyword)});
+console.log(appleSmartphones);
