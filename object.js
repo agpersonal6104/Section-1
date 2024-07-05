@@ -133,3 +133,18 @@ console.log('-------------------------------');
 
 const brands = smartphoneArray.map((smartphone) => { return smartphone.Brand});
 console.log(new Set(brands));
+console.log(Array.from(new Set(brands)));
+
+console.log('-------------------------------');
+
+let [brand,model,price] = ['Apple', 'iPhone', 79999];
+console.log(brand + ' ' + 'Model' + '-' +price );
+console.log(`${brand} ${model} ${price}`);
+
+console.log('-------------------------------');
+
+// [ ' Apple iPhone 16 - 79999' ]
+console.log(smartphoneArray.map((smartphone) => { return `${smartphone.Brand} ${smartphone.Model} ${smartphone.Price}`}));
+
+console.log('-------------------------------');
+
