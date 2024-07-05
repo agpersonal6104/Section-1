@@ -127,5 +127,5 @@ console.log('-------------------------------');
 
 // Filter all apple smartphones
 const keyword = 'Apple';
-const appleSmartphones = smartphoneArray.filter((smartphone) => {return smartphone.Brand.includes(keyword)});
+const appleSmartphones = smartphoneArray.filter((smartphone) => { return smartphone.Brand.includes( keyword ) } );
 console.log(appleSmartphones);
