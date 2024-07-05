@@ -1,5 +1,5 @@
 const checkOdd = ( n ) => {
-    return n%2 !== 0;
+    return  n % 2 !== 0;
 }
 
 const productTypes = [
@@ -14,4 +14,11 @@ const sizes = {
     XXL: 44
 };
 
-module.exports = { productTypes, sizes};
+// module.exports = { productTypes, sizes};
+module.exports = checkOdd;
+
+function myFunction() {
+    console.log("Hello from myFunction!");
+}
+
+module.exports = myFunction;
