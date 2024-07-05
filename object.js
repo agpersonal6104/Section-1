@@ -144,7 +144,17 @@ console.log(`${brand} ${model} ${price}`);
 console.log('-------------------------------');
 
 // [ ' Apple iPhone 16 - 79999' ]
-console.log(smartphoneArray.map((smartphone) => { return `${smartphone.Brand} ${smartphone.Model} ${smartphone.Price}`}));
+console.log(smartphoneArray.map((smartphone, i) => { return `${smartphone.Brand} ${smartphone.Model} ${smartphone.Price}`}));
 
 console.log('-------------------------------');
 
+// [ '1. Apple iPhone 16 - 79999' ]
+console.log(smartphoneArray.map((smartphone, i) => { return `${i+1} ${smartphone.Brand} ${smartphone.Model} ${smartphone.Price}`}));
+
+// [ '1. Apple iPhone 16 (red)' '2. Apple iphone 16 (blue)' ]
+const allColorPhones = smartphoneArray.map((smartphone) => { return smartphone.colors.map( (c) => { return `${smartphone.Brand} ${smartphone.Model} ${c}` } )});
+console.log(allColorPhones.flat());
+
+console.log('-------------------------------');
+
+//Color and Ram nested together
